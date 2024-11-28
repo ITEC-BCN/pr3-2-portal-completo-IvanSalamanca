@@ -24,7 +24,12 @@ header {
     align-items: center; 
     background-color: rgb(229, 55, 49); 
     padding: 14px;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    width: 100%;
 }
+
 
 header div img {
     max-width: 85px; 
@@ -37,6 +42,7 @@ header nav {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 header nav a {
@@ -44,6 +50,7 @@ header nav a {
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+
 
 /* ----------Peliculas---------- */
 #Peliculas {
