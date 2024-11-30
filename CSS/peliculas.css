@@ -1,0 +1,56 @@
+/* ---------- Sección de Películas ---------- */
+#Peliculas {
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.contenedor-peliculas {
+    display: flex;
+    flex-wrap: wrap; /* Permite adaptar las tarjetas al ancho de la pantalla */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pelicula {
+    background-color: rgb(229, 55, 49);
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Ancho de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pelicula:hover {
+    transform: scale(1.05); /* Efecto hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pelicula h5 {
+    font-size: 1.25rem;
+    margin: 15px 10px 5px;
+    color: #000000;
+    
+}
+
+.pelicula h6 {
+    font-size: 1rem;
+    margin: 5px 10px 10px;
+    color: #222222;
+}
+
+.pelicula .categoria,
+.pelicula .edad {
+    font-size: 0.9rem;
+    margin: 5px 10px;
+    color: #222222;
+}
+

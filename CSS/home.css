@@ -1,75 +1,4 @@
-/* General layout */
-* {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-body {
-    background-color: #222222;
-}
-
-/* ----------Titulos secciones---------- */
-
-.tituloRed {
-    color: rgb(229, 55, 49);
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-/* ----------Header---------- */
-/* ----------Header---------- */
-header {
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
-    background-color: rgb(229, 55, 49); 
-    padding: 14px;
-    position: sticky;
-    top: 0; /* Se queda pegado en la parte superior */
-    z-index: 1000;
-    width: 100%;
-}
-
-/* Estilo para la imagen en la parte superior */
-header div {
-    position: absolute; /* Lo mantiene en la parte superior */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Centra la imagen */
-    max-width: 85px; /* Tamaño máximo de la imagen */
-    display: block;
-    z-index: 1; /* Asegura que la imagen quede por encima del nav */
-}
-
-/* Ocultar el logo cuando se hace scroll */
-header div img {
-    display: block;
-}
-
-/* ----------Nav (Menú)---------- */
-header nav {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgb(229, 55, 49); 
-    padding: 14px 0; /* Espaciado del nav */
-    z-index: 0; /* Asegura que el nav esté detrás de la imagen */
-}
-
-header nav a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
-/* Cambiar el fondo del nav cuando esté fijo (opcional) */
-header nav.sticky {
-    background-color: rgba(229, 55, 49, 0.9); /* Fondo semi-transparente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra para destacar */
-}
-
+ 
 /* ----------Peliculas---------- */
 #Peliculas {
     text-align: center;
@@ -84,7 +13,14 @@ header nav.sticky {
     flex-wrap: wrap;
     gap: 10px;
     padding: 0 10px;
+
 }
+
+.pelicula:hover {
+    transform: scale(1.05); /* Efecto hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 .pelicula {
     background-color: rgb(229, 55, 49);
@@ -98,6 +34,7 @@ header nav.sticky {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .pelicula img {
@@ -134,6 +71,10 @@ header nav.sticky {
     max-width: 1200px;
     margin: 0 auto;
 }
+#actores article:hover {
+    transform: scale(1.05); /* Efecto hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 #actores article {
     flex: 0 0 auto;
@@ -143,6 +84,7 @@ header nav.sticky {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #actores img {
