@@ -10,7 +10,7 @@
     flex-wrap: wrap; /* Permite adaptar las tarjetas al ancho de la pantalla */
     gap: 20px;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -35,21 +35,21 @@
 }
 
 .pelicula h5 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 15px 10px 5px;
     color: #000000;
     
 }
 
 .pelicula h6 {
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 5px 10px 10px;
     color: #222222;
 }
 
 .pelicula .categoria,
 .pelicula .edad {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     margin: 5px 10px;
     color: #222222;
 }

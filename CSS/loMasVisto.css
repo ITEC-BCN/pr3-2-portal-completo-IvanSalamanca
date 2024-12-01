@@ -1,0 +1,45 @@
+/* Lo más visto */
+#LoMasVisto {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en forma de lista vertical */
+    gap: 15px; /* Espaciado entre los elementos de la lista */
+    padding: 20px; /* Espaciado interno del contenedor */
+    max-width: 800px; /* Ancho máximo para el listado */
+    margin: 0 auto; /* Centra el contenedor */
+    list-style: none; /* Elimina los estilos de lista por defecto */
+}
+
+#LoMasVisto .item {
+    display: flex; /* Alinea el número, imagen y descripción horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 15px; /* Espaciado entre elementos dentro de cada item */
+    border-bottom: 1px solid #121212; /* Línea divisoria entre items */
+    padding-bottom: 10px;
+}
+
+#LoMasVisto img {
+    height: 200px; /* Altura fija para las imágenes */
+    width: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+#LoMasVisto .ranking {
+    font-size: 20px; /* Tamaño de la fuente para los números */
+    font-weight: bold; /* Negrita */
+    color: #b63d3d; /* Color de texto oscuro */
+    background-color: #141414; /* Fondo claro para los números */
+    border-radius: 50%; /* Forma circular */
+    width: 35px; /* Ancho del círculo */
+    height: 35px; /* Altura del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+#LoMasVisto p {
+    margin: 0; /* Elimina el margen de los párrafos */
+    font-size: 14px; /* Tamaño de texto para las descripciones */
+    color: #727272; /* Color de texto gris */
+}

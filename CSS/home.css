@@ -3,16 +3,16 @@
 #Peliculas {
     text-align: center;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .contenedor-peliculas {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 0 10px;
+    flex-wrap: wrap; /* Permite adaptar las tarjetas al ancho de la pantalla */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
 
 }
 
@@ -24,25 +24,17 @@
 
 .pelicula {
     background-color: rgb(229, 55, 49);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    flex: 1;
-    max-width: 16%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(15% - 20px); /* Ancho de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .pelicula img {
     width: 100%;
     height: auto;
-    max-height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
+    display: block;
 }
 
 .pelicula h5 {
@@ -54,7 +46,7 @@
 }
 
 .pelicula h6 {
-    font-size: 0.9em;
+    font-size: 0.6em;
     margin-bottom: 10px;
     color: white;
 }
@@ -70,6 +62,7 @@
     border-radius: 10px;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 #actores article:hover {
     transform: scale(1.05); /* Efecto hover */
@@ -181,16 +174,37 @@ h5, h6 {
 /* Lo más visto */
 #LoMasVisto {
     display: flex;
-    overflow-x: auto;  /* Permite desplazamiento horizontal */
-    gap: 10px;  /* Espaciado entre las imágenes */
-    padding: 10px 0;  /* Espaciado arriba y abajo */
-    max-width: 1200px;  /* Establece el mismo ancho que el contenedor de Películas */
-    margin: 0 auto;  /* Centra el contenedor horizontalmente */
-    
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    gap: 10px; /* Espaciado entre los elementos */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+#LoMasVisto .item {
+    position: relative; /* Necesario para posicionar el número */
+    display: inline-block;
 }
 
 #LoMasVisto img {
-    max-height: 200px;  /* Altura máxima para las imágenes */
-    object-fit: cover;  /* Mantiene la proporción de la imagen */
-    border-radius: 10px;  /* Bordes redondeados */
+    max-height: 200px; /* Altura máxima para las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#LoMasVisto .ranking {
+    position: absolute;
+    top: 5px; /* Ajusta la posición vertical */
+    left: 5px; /* Ajusta la posición horizontal */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    color: white; /* Texto blanco */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    border-radius: 50%; /* Forma circular */
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Altura del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra */
 }
