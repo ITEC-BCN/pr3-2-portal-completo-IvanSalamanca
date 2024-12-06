@@ -1,0 +1,120 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: #999999;
+}
+
+/* Contenedor principal */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #999999;
+}
+
+/* Grupo de formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Etiqueta */
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #616161;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón de envío */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(229, 55, 49);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #4cae4c;
+}
+
+/* Añadido para boton de sumbit sacado de https://uiverse.io/guilhermeyohan/warm-mule-6 
+pagina que proporciona elementos interesantes con html y css 
+*/
+/* Botón de envío */
+.btn-submit {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    background-color: rgb(229, 55, 49);
+}
+
+.btn-submit:hover {
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f, 0 0 15px #03f40f, 0 0 50px #03f40f, 0 0 100px #03f40f;
+}
+
+.btn-submit span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.btn-submit span:nth-child(1) {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 2s linear infinite;
+}
+

@@ -4,6 +4,7 @@
     padding: 20px;
     color: #333;
     text-align: center;
+    
 }
 
 #Series .series-contenido {
@@ -22,6 +23,7 @@
     width: calc(33.33% - 20px); /* Ancho de cada tarjeta */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
 }
 
 .series-contenido img {

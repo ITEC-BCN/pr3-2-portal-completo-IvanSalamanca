@@ -7,19 +7,20 @@
     <title>Web ITBFlix</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/botonRSS.css">
 </head>
 
 <body>
     <header>
         <div>
-            <img src="./Media/LogoPersonal-removebg.png" alt="Logo" class="logoWEB">
+            <a href="./index.html"><img src="./Media/LogoPersonal-removebg.png" alt="Logo" class="logoWEB"></a>
         </div>
         <nav class="menuNav">
             <p><a href="#">ITBFlix</a></p>
             <p><a href="./src/peliculas.html">Peliculas</a></p>
             <p><a href="./src/series.html">Series</a></p>
             <p><a href="./src/loMasVisto.html">Lo Mas Visto</a></p>
-            <p><a href="#">Date De Alta</a></p>
+            <p><a href="./src/dateAlta.html">Date De Alta</a></p>
             <p><a href="#">Contacto</a></p>
         </nav>
     </header>
@@ -28,7 +29,7 @@
             <h2 class="tituloRed">Películas</h2>
             <div class="contenedor-peliculas">
                 <article class="pelicula">
-                    <img src="./Media/Pelis/dune.jpg" alt="fotoPeli1">
+                    <a href="./src/notFound.html"><img src="./Media/Pelis/dune.jpg" alt="fotoPeli1"></a>
                     <h5>Dune</h5>
                     <h6>Un joven noble descubre su destino en un planeta desértico lleno de intrigas y misterios.
                     </h6>
@@ -36,7 +37,7 @@
                     <p class="edad">Edad: 13+</p>
                 </article>
                 <article class="pelicula">
-                    <img src="./Media/Pelis/Spider-Man No Way Home.jpg" alt="fotoPeli2">
+                    <a href="./src/Especifis/Spider-Man.html"><img src="./Media/Pelis/Spider-Man No Way Home.jpg" alt="fotoPeli2"></a>
                     <h5>Spider-Man No Way Home</h5>
                     <h6>Spider-Man enfrenta el multiverso y se encuentra con versiones pasadas de sí mismo.</h6>
                     <p class="categoria">Categoría: Acción</p>
@@ -116,10 +117,9 @@
             </section>
         </div>
         <div id="content-Series-Fest">
-            <aside id="Festivales">
+            <section id="Festivales">
                 <h2 class="tituloRed">Festivales</h2>
                 <section>
-                    <h4>Add___</h4>
                     <article>
                         <img src="./Media/Festival/Premios Óscar.webp" alt="Imagen Festivales">
                         <h5>Premios Óscar</h5>
@@ -131,7 +131,7 @@
                         <h6>Anatomy of a Fall</h6>
                     </article>
                 </section>
-            </aside>
+            </section>
             <div>
                 <section id="Series">
                     <h2 class="tituloRed">Series</h2>
@@ -142,7 +142,7 @@
                             <h6>Un grupo de jóvenes enfrenta fenómenos paranormales en su pequeño pueblo de Hawkins.</h6>
                         </article>
                         <article>
-                            <img src="./Media/Series/Succession.jpg" alt="Foto Serie">
+                            <a href="./src/Especifis/Succesion.html"><img src="./Media/Series/Succession.jpg" alt="Foto Serie"></a>
                             <h5>Succession</h5>
                             <h6>Una familia de multimillonarios lucha por el control de su imperio de medios.</h6>
                         </article>
@@ -235,7 +235,14 @@
         <section>
             <a href="https://es-es.facebook.com/login/?next=https%3A%2F%2Fes-es.facebook.com%2F"><b>Facebook</b></a>
             <a href="https://x.com/?lang=ca&mx=2"><b>Twitter</b></a>
-            <a href="https://www.instagram.com/"><b>Instagram</b></a>
+            <a href="#">
+                <button class="Btn">
+                    <span class="svgContainer">
+                      <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    </span>
+                    <span class="BG"></span>
+                </button>
+            </a>
             <a href="https://www.netflix.com/es/"><b>RSS</b></a>
         </section>
         <section>

@@ -1,0 +1,45 @@
+/* Page Not Found Section */
+#pageNotFound {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgb(123, 123, 123);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#pageNotFound .tituloRed {
+    font-size: 24px;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+#pageNotFound h6 {
+    font-size: 16px;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#pageNotFound a {
+    text-decoration: none;
+    color: #e53935;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#pageNotFound a:hover {
+    color: #b71c1c; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menuNav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #pageNotFound {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
