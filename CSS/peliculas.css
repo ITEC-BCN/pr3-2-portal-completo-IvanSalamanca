@@ -7,7 +7,7 @@
 
 .contenedor-peliculas {
     display: flex;
-    flex-wrap: wrap; /* Permite adaptar las tarjetas al ancho de la pantalla */
+    flex-wrap: wrap; 
     gap: 20px;
     justify-content: center;
     max-width: 1150px;
@@ -18,13 +18,13 @@
     background-color: rgb(229, 55, 49);
     border-radius: 8px;
     overflow: hidden;
-    width: calc(33.33% - 20px); /* Ancho de cada tarjeta */
+    width: calc(33.33% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .pelicula:hover {
-    transform: scale(1.05); /* Efecto hover */
+    transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
